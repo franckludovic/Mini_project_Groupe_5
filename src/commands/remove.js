@@ -11,10 +11,11 @@ module.exports = async (pkgName) => {
       {
         type: 'input',
         name: 'name',
-        message: 'Enter package name to remove:',
+        message: 'Enter package name to remove (or type "back"):',
         validate: input => input.length > 0 || 'Package name is required'
       }
     ]);
+    if (name.toLowerCase() === 'back') return;
     pkgName = name;
   }
 

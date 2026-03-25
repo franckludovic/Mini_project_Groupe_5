@@ -4,12 +4,11 @@
 
 It is designed to be compatible with both **npm** (`package-lock.json`) and **yarn** (`yarn.lock`).
 
----
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
-- [Node.js]( (v14 or higher recommended)
+- [Node.js] (v14 or higher recommended)
 - [npm](https://www.npmjs.com/) (to install internal dependencies)
 
 ### Installation
@@ -25,12 +24,24 @@ It is designed to be compatible with both **npm** (`package-lock.json`) and **ya
 
 ---
 
-## 🔐 Authentication System
+## Authentication System
 
 When you launch `sdpkg` without arguments, you will find an authentication menu:
 - **Sign Up**: Create a new account. Your credentials are saved permanently in `src/data/users.json`.
 - **Login**: Verify your credentials to access the main menu.
 - **Session Security**: A temporary session is created upon login and cleared when you exit the program.
+---
+
+## Interactive Main Menu
+
+Running `sdpkg` without arguments opens the **Main Menu**, where you can navigate through all features using your arrow keys:
+- **Initialize Project**: Set up your `package.json`.
+- **Install Dependency**: Submenu to install all deps or search for a new one.
+- **List Packages**: View your dependency tree.
+- **Remove Package**: Interactive package removal.
+- **Update Package**: Easily update to the latest version.
+- **Security Audit**: Run a scan for vulnerabilities.
+- **Exit**: Safely close and clear your session.
 
 ---
 
@@ -82,7 +93,7 @@ node bin/sdpkg.js audit
 
 ---
 
-## 🎨 Professional Enhancements
+## Professional Enhancements
 - **Interactive CLI**: Powered by `inquirer` for a smooth user experience.
 - **Color Output**: Integrated `chalk` for readable success and error messages.
 - **Progress Indicators**: Uses `ora` spinners for long-running tasks like downloads.

@@ -16,10 +16,13 @@ module.exports = async (pkgName) => {
         message: 'Install options:',
         choices: [
           { name: 'Install all dependencies from package.json', value: 'all' },
-          { name: 'Install a specific package', value: 'specific' }
+          { name: 'Install a specific package', value: 'specific' },
+          { name: 'Back to Main Menu', value: 'back' }
         ]
       }
     ]);
+
+    if (mode === 'back') return;
 
     if (mode === 'all') {
       const pkgJsonPath = path.join(process.cwd(), 'package.json');
@@ -39,10 +42,11 @@ module.exports = async (pkgName) => {
         {
           type: 'input',
           name: 'name',
-          message: 'Enter package name to install:',
+          message: 'Enter package name to install (or type "back"):',
           validate: input => input.length > 0 || 'Package name is required'
         }
       ]);
+      if (name.toLowerCase() === 'back') return;
       pkgName = name;
     }
   }
