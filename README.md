@@ -21,6 +21,7 @@ It is designed to be compatible with both **npm** (`package-lock.json`) and **ya
    ```bash
    npm link
    ```
+   with it  you can use it anywhere in your computer on any terminal just typing **sdpkg** removing the need to put the file path like ***/**/**/sdpkg
 
 ---
 
@@ -29,8 +30,7 @@ It is designed to be compatible with both **npm** (`package-lock.json`) and **ya
 When you launch `sdpkg` without arguments, you will find an authentication menu:
 - **Sign Up**: Create a new account. Your credentials are saved permanently in `src/data/users.json`.
 - **Login**: Verify your credentials to access the main menu.
-- **Session Security**: A temporary session is created upon login and cleared when you exit the program.
----
+
 
 ## Interactive Main Menu
 
@@ -43,7 +43,6 @@ Running `sdpkg` without arguments opens the **Main Menu**, where you can navigat
 - **Security Audit**: Run a scan for vulnerabilities.
 - **Exit**: Safely close and clear your session.
 
----
 
 ## Available Commands
 
