@@ -1,0 +1,26 @@
+{
+  "name": "sdpkg",
+  "version": "1.0.0",
+  "description": "A custom CLI package manager for Node.js projects.",
+  "main": "index.js",
+  "bin": {
+    "sdpkg": "./bin/sdpkg.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "axios": "^1.13.6",
+    "chalk": "^4.1.2",
+    "commander": "^14.0.3",
+    "fs-extra": "^11.3.4",
+    "inquirer": "^8.2.7",
+    "ora": "^5.4.1",
+    "tar": "^7.5.13",
+    "nodemon": "^3.1.14"
+  }
+}

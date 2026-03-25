@@ -1,0 +1,6 @@
+# This file is managed by sdpkg
+# Yarn compatibility mode enabled
+
+"nodemon@^3.1.14":
+  version "3.1.14"
+  resolved "https://registry.npmjs.org/nodemon/-/nodemon-3.1.14.tgz"
