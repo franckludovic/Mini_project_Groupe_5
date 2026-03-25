@@ -4,8 +4,14 @@
 
 It is designed to be compatible with both **npm** (`package-lock.json`) and **yarn** (`yarn.lock`).
 
+### Group members :
 
-## Getting Started
+1. Tankeu Ndosse franck Direct Entry
+2. Mbiangoup II Ngoba Esperalda Reine
+3. Fongang Grace
+4. Tah Estavet
+5. Djou Joan
+6. Ndifor Felicity 
 
 ### Prerequisites
 - [Node.js] (v14 or higher recommended)
