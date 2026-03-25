@@ -1,10 +1,10 @@
 {
-  "name": "sdpkg",
+  "name": "dmc",
   "version": "1.0.0",
   "description": "A custom CLI package manager for Node.js projects.",
   "main": "index.js",
   "bin": {
-    "sdpkg": "./bin/sdpkg.js"
+    "dmc": "./bin/dmc.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

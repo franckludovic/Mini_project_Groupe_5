@@ -4,7 +4,7 @@ const path = require('path');
 const os = require('os');
 const chalk = require('chalk');
 
-const CONFIG_FILE = path.join(os.homedir(), '.sdpkgconf.json');
+const CONFIG_FILE = path.join(os.homedir(), '.dmcconf.json');
 const USERS_FILE = path.join(__dirname, '../data/users.json');
 
 async function getUsers() {
@@ -22,9 +22,9 @@ async function saveUsers(users) {
 
 module.exports = async (mode = 'login') => {
   if (mode === 'login') {
-    console.log(chalk.cyan('\n--- Login to sdpkg ---'));
+    console.log(chalk.cyan('\n--- Login to dmc ---'));
   } else {
-    console.log(chalk.cyan('\n--- Sign Up for sdpkg ---'));
+    console.log(chalk.cyan('\n--- Sign Up for dmc ---'));
   }
   
   const questions = [

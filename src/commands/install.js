@@ -27,7 +27,7 @@ module.exports = async (pkgName) => {
     if (mode === 'all') {
       const pkgJsonPath = path.join(process.cwd(), 'package.json');
       if (!(await fs.pathExists(pkgJsonPath))) {
-        console.error(chalk.red('No package.json found. Use sdpkg init first.'));
+        console.error(chalk.red('No package.json found. Use dmc init first.'));
         return;
       }
       const pkgJson = await fs.readJson(pkgJsonPath);
@@ -64,7 +64,7 @@ async function installPackage(pkgName, requestedVersion = 'latest') {
     const tarballUrl = pkgData.versions[version].dist.tarball;
 
     // 2. Download tarball
-    const tempDir = path.join(process.cwd(), '.sdpkg-cache');
+    const tempDir = path.join(process.cwd(), '.dmc-cache');
     await fs.ensureDir(tempDir);
     const tarPath = path.join(tempDir, `${pkgName}-${version}.tgz`);
     

@@ -8,7 +8,7 @@ const pkg = require('../package.json');
 const login = require('../src/commands/login');
 
 async function runInteractiveMenu() {
-  console.log(chalk.bold.blue('\nWelcome to sdpkg - Software Development Package Manager\n'));
+  console.log(chalk.bold.blue('\nWelcome to dmc - Dependency Manager CLI\n'));
 
   // 1. Initial Auth Menu
   let authenticated = false;
@@ -77,8 +77,8 @@ async function runInteractiveMenu() {
 if (process.argv.slice(2).length > 0) {
   // Direct CLI Path
   program
-    .name('sdpkg')
-    .description('Software Development Package Manager')
+    .name('dmc')
+    .description('Dependency Manager CLI')
     .version(pkg.version);
 
   program
